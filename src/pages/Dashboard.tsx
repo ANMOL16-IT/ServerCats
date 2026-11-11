@@ -13,7 +13,7 @@ export default function DashboardPage() {
         <div><h1 className="text-3xl font-semibold tracking-tight">Dashboard</h1><p className="text-sm text-muted-foreground">{D.os} · {D.uptime}</p></div>
         <Dashboard />
         <Card>
-          <CardHeader><CardTitle className="text-lg">Terminal output</CardTitle><CardDescription>Exactly what server/collect.py printed on its last run.</CardDescription></CardHeader>
+          <CardHeader><CardTitle className="text-lg">Terminal output</CardTitle><CardDescription>Exactly what server/collect.sh printed on its last run.</CardDescription></CardHeader>
           <CardContent className="space-y-3">
             <div className="flex gap-2"><Button onClick={() => setOpen(!open)} variant="secondary">{open ? "Hide output" : "Show output"}</Button><Button onClick={downloadReport}>Download .txt</Button></div>
             {open && <pre className="overflow-x-auto rounded-lg bg-neutral-900 p-4 font-mono text-xs text-green-300">{D.report}</pre>}

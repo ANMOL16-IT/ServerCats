@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { D, fmt } from "@/lib/lab";
 
-// Real values from server/collect.py
+// Real values from server/collect.sh
 export function DashboardStats() {
   const items = [
     { label: "CPU usage", value: `${D.cpu.pct}%`, note: `${D.cpu.cores} core(s) · load ${D.cpu.load[0]}` },
