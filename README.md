@@ -10,6 +10,17 @@ LabServer automates the day-to-day administration of a college computer laborato
 
 ---
 
+### 📄 Project Documents
+
+| Document | Link |
+|----------|------|
+| 📘 Project Report | [Project-Report.pdf](./Project-Report.pdf) |
+| 🎞️ Project Presentation (PDF) | [Project-Presentation.pdf](./Project-Presentation.pdf) |
+| 🎨 Project Presentation (Canva) | [View on Canva](https://canva.link/m0wcjxq7cf8hn4h) |
+
+---
+
+
 ## Table of Contents
 
 1. [Project Title and Team](#1-project-title-and-team)
