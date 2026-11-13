@@ -8,7 +8,7 @@ import { D } from "@/lib/lab";
 export default function DashboardPage() {
   const [open, setOpen] = useState(true);
   return (
-    <div className="min-h-screen w-full bg-background p-4 pt-24 text-foreground">
+    <div className="min-h-screen w-full p-4 pt-24 text-foreground">
       <div className="mx-auto max-w-6xl space-y-4">
         <div><h1 className="text-3xl font-semibold tracking-tight">Dashboard</h1><p className="text-sm text-muted-foreground">{D.os} · {D.uptime}</p></div>
         <Dashboard />

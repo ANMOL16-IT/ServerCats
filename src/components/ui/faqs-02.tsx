@@ -7,7 +7,7 @@ export type Faq = { q: string; a: string };
 // Layout is the pasted Faqs02 block; content + contact card are now props.
 export default function Faqs02({ faqs, githubUrl, title = "Your questions answered", intro }: { faqs: Faq[]; githubUrl: string; title?: string; intro?: string }) {
   return (
-    <section className="bg-background py-20 sm:py-28">
+    <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 sm:px-10">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-start">
           <div className="lg:sticky lg:top-24 flex flex-col gap-5">
@@ -18,12 +18,12 @@ export default function Faqs02({ faqs, githubUrl, title = "Your questions answer
               <div className="flex items-center gap-3">
                 <span className="grid size-9 shrink-0 place-items-center rounded-full bg-foreground text-background"><GitBranch className="size-4" /></span>
                 <div className="flex flex-col leading-tight">
-                  <p className="text-sm font-medium text-foreground">Built by the project developers</p>
-                  <p className="text-xs text-muted-foreground"><Clock className="mr-1.5 inline size-3" />Source code, scripts and docs</p>
+                  <p className="text-sm font-medium text-foreground">Still have questions?</p>
+                  <p className="text-xs text-muted-foreground"><Clock className="mr-1.5 inline size-3" />Reach the people who built it</p>
                 </div>
               </div>
               <Button size="sm" className="mt-2 w-full rounded-full" asChild>
-                <a href={githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub<ArrowRight /></a>
+                <a href="#team" onClick={(e) => { e.preventDefault(); document.getElementById("team")?.scrollIntoView({ behavior: "smooth" }); }}>Meet the team on GitHub<ArrowRight /></a>
               </Button>
             </div>
           </div>

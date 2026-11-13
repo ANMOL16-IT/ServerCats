@@ -1,5 +1,6 @@
 import Faqs02 from "@/components/ui/faqs-02";
-import { GITHUB } from "@/lib/lab";
+import TeamTabs from "@/components/ui/team-tabs";
+import { GITHUB, TEAM } from "@/lib/lab";
 
 const faqs = [
   { q: "How do I get fresh numbers?", a: "On the server run: npm run refresh (as root). It runs server/collect.sh, which creates accounts and folders, cleans temp files, takes a backup, tests the restore and rewrites src/data.json. Rebuild or reload the site to see it." },
@@ -11,5 +12,5 @@ const faqs = [
 ];
 
 export default function Faq() {
-  return <div className="pt-12"><Faqs02 faqs={faqs} githubUrl={GITHUB} title="How to use LabServer" intro="LabServer shows what the server scripts produce. The scripts do the real work; this site displays it." /></div>;
+  return <div className="pt-12"><Faqs02 faqs={faqs} githubUrl={GITHUB} title="How to use LabServer" intro="LabServer shows what the server scripts produce. The scripts do the real work; this site displays it." /><TeamTabs members={TEAM} /></div>;
 }
